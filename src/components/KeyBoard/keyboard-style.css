@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.white-notes {
+    display: flex;
+}
+
+.white-note {
+    height: 200px;
+    width: 50px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.white-note:last-child {
+    border-right: 1px solid black;
+}
+
+.black-notes {
+    display: flex;
+    gap: 25px;
+    transform: translate(40px, -200px);
+    width: fit-content;
+}
+
+.black-notes .empty {
+    visibility: hidden;
+    width: 25px;
+}
+
+.black-note {
+    height: 100px;
+    width: 25px;
+    background: black;
+    cursor: pointer;
+}
